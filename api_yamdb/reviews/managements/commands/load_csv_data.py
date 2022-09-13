@@ -35,7 +35,7 @@ def check_db(model):
         if result == 'Y' or result == 'y':
             return delete_objects(model)
         else:
-            return sys.exit(0)
+            return None
 
 
 def objects_creator(model, row):
