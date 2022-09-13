@@ -1,4 +1,3 @@
-import sys
 from csv import DictReader
 from os.path import exists
 
