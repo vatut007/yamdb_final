@@ -22,8 +22,7 @@ def delete_objects(model):
     model = model
     try:
         model.objects.all().delete()
-        message = f'Существющие объекты {model.__name__} удалены.'
-        return message
+        return f'Существющие объекты {model.__name__} удалены.'
     except Exception as error:
         raise Exception(f'Ошибка при удалении объектов: {error}')
 
@@ -36,7 +35,7 @@ def check_db(model):
         if result == 'Y' or result == 'y':
             return delete_objects(model)
         else:
-            sys.exit(0)
+            return sys.exit(0)
 
 
 def objects_creator(model, row):

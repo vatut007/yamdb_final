@@ -41,7 +41,6 @@ def get_object_or_400(model, **kwargs):
         instance = model.objects.get(**kwargs)
     except Exception as error:
         raise ParseError(error)
-    return instance
 
 
 class CategoryViewSet(CreateListDestroyMixins):
@@ -122,8 +121,7 @@ class ReviewViewSet(viewsets.ModelViewSet):
 
     def get_queryset(self):
         title = get_object_or_404(Title, id=self.kwargs['id'])
-        queryset = title.reviews.all()
-        return queryset
+        return title.reviews.all()
 
     def create(self, request, *args, **kwargs):
         serializer = self.get_serializer(data=request.data)
