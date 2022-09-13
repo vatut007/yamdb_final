@@ -1,11 +1,12 @@
 import sys
 from csv import DictReader
 from os.path import exists
+
 from django.contrib.staticfiles.finders import find
 from django.core.management import BaseCommand
-
 from reviews.models import (Category, Comment, Genre, GenreTitle, Review,
                             Title, User)
+
 DATA_MODEL = {
     'users': User,
     'category': Category,
