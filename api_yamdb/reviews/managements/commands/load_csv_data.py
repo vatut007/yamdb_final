@@ -1,3 +1,4 @@
+import sys
 from csv import DictReader
 from os.path import exists
 
@@ -33,8 +34,8 @@ def check_db(model):
                        'другое для отмены и выхода: ')
         if result == 'Y' or result == 'y':
             return delete_objects(model)
-        else:
-            return None
+    else:
+        return sys.exit(0)
 
 
 def objects_creator(model, row):
