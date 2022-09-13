@@ -38,7 +38,7 @@ class CreateViewSet(mixins.CreateModelMixin, viewsets.GenericViewSet):
 
 def get_object_or_400(model, **kwargs):
     try:
-        instance = model.objects.get(**kwargs)
+        model.objects.get(**kwargs)
     except Exception as error:
         raise ParseError(error)
 
