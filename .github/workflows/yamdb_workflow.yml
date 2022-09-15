@@ -45,4 +45,4 @@ jobs:
         with:
           context: ./api_yamdb/
           push: true
-          tags: ${{ secrets.DOCKER_USERNAME }}/apiyamdb:v1.1.2022         
+          tags: ${{ secrets.DOCKER_USERNAME }}/apiyamdb:latest        
