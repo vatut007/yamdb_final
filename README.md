@@ -3,27 +3,27 @@ yamdb_final
 ![example workflow](https://github.com/vatut007/yamdb_final/actions/workflows/yamdb_workflow.yml/badge.svg)
 # Установка
 ## Требования
-Регистрация на dockerhub
-Настроенный SSH доступ к серверу по ключу с паролем
-Регистрация на GitHub
-Выделенный сервер Linux Ubuntu 20.04 с с публичным IP адресом
-Настройка GitHub Secrets
-Клонируйте репозиторий и настройте переменные GitHub secrets согласно Вашему окружению
+Регистрация на dockerhub <br />
+Настроенный SSH доступ к серверу по ключу с паролем <br />
+Регистрация на GitHub <br />
+Выделенный сервер Linux Ubuntu 20.04 с с публичным IP адресом <br />
+Настройка GitHub Secrets <br />
+Клонируйте репозиторий и настройте переменные GitHub secrets согласно Вашему окружению <br />
 
-DOCKER_PASSWORD
-DOCKER_USERNAME
-SERVER_HOST #публичный адрес сервера для доступа по SSH
-SERVER_SUDO_USER
-SSH_KEY #Скопируйте приватный ключ с компьютера, имеющего доступ к боевому серверу: cat ~/.ssh/id_rsa
-SSH_PASSWORD
-TELEGRAM_TOKEN #токен чат бота который будет отправлять сообщение
-TELEGRAM_CHAT_ID #кому отправлять сообщение
-DB_ENGINE пример django.db.backends.postgresql
-DB_NAME #имя образа docker-compose с базой - db
-DB_POSTGRES_USER
-DB_POSTGRES_PASSWORD
-DB_HOST
-DB_PORT
+DOCKER_PASSWORD <br />
+DOCKER_USERNAME <br />
+SERVER_HOST #публичный адрес сервера для доступа по SSH<br />
+SERVER_SUDO_USER  <br />
+SSH_KEY #Скопируйте приватный ключ с компьютера, имеющего доступ к боевому серверу: cat ~/.ssh/id_rsa <br />
+SSH_PASSWORD <br />
+TELEGRAM_TOKEN #токен чат бота который будет отправлять сообщение <br />
+TELEGRAM_CHAT_ID #кому отправлять сообщение <br />
+DB_ENGINE пример django.db.backends.postgresql <br />
+DB_NAME #имя образа docker-compose с базой - db <br />
+DB_POSTGRES_USER <br />
+DB_POSTGRES_PASSWORD <br />
+DB_HOST <br />
+DB_PORT <br />
 # Установка на выделенном сервере
 На боевом сервере установите docker и docker-compose Остановите службу nginx Скопируйте файлы из директории infra в домашную папку пользователя docker-compose.yaml nginx - сохраняя стурктуру и название папок
 
