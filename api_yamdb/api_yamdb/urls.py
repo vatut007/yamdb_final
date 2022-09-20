@@ -21,7 +21,7 @@ urlpatterns = [
     path('api/', include('api.urls', namespace='api')),
     path('admin/', admin.site.urls),
     path(
-        'redoc1/',
+        'redoc/',
         TemplateView.as_view(template_name='redoc.html'),
         name='redoc'
     ),
