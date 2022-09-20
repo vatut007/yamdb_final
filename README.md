@@ -1,6 +1,10 @@
 # yamdb_final
 yamdb_final
 ![example workflow](https://github.com/vatut007/yamdb_final/actions/workflows/yamdb_workflow.yml/badge.svg)
+# Работает по адресу:
+51.250.109.127
+http://51.250.109.127/admin/
+http://51.250.109.127/redoc/
 # Установка
 ## Требования
 Регистрация на dockerhub <br />
